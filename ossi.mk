@@ -537,7 +537,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     hostapd_cli \
-    libwifi-hal-mt66xx
+    libwifi-hal-mt66xx \
+    libwifi-hal-wrapper \
+    android.hardware.wifi-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hidl/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml
