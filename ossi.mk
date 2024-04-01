@@ -25,7 +25,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Call proprietary blob setup
-$(call inherit-product, device/oplus/camera/camera.mk)
+#$(call inherit-product, device/oplus/camera/camera.mk)
 #$(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
 $(call inherit-product-if-exists, packages/apps/OneplusParts/parts.mk)
 $(call inherit-product-if-exists, packages/apps/PocketMode/pocket_mode.mk)
@@ -184,10 +184,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss-V1-ndk.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -371,10 +369,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.mediatek-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    libmtkperf_client_vendor \
-    libmtkperf_client
+    android.hardware.power-service-mediatek \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
@@ -464,10 +460,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
@@ -534,11 +526,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.3.vendor \
     android.hardware.wifi@1.4.vendor \
     android.hardware.wifi@1.5.vendor \
-    wpa_supplicant \
-    hostapd \
-    hostapd_cli \
-    libwifi-hal-mt66xx \
-    libwifi-hal-wrapper \
     android.hardware.wifi-service
 
 PRODUCT_COPY_FILES += \
