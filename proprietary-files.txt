@@ -1,14 +1,4 @@
-# Unpinned blobs from DN2103_11_F.45 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1684289553451 release-keys)
-
-# Extra
-odm/lib/libosensehalclient.so
-odm/lib/vendor.oplus.hardware.osense.client@1.0.so
-odm/lib64/libosensehalclient.so
-odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
-system_ext/lib/vendor.oplus.hardware.osense.client@1.0.so
-system_ext/lib64/vendor.oplus.hardware.osense.client@1.0.so
-vendor/lib/libnxp_extamp_intf.so
-vendor/lib64/libnxp_extamp_intf.so
+# Unpinned common blobs from DN2103_11_C.11 (sys_mssi_64_cn_armv82-user 12 SP1A.210812.016 1666314723635 release-keys)
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -19,10 +9,6 @@ vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libaalservice.so
-
-# ADSP
-odm/lib64/libadsprpc.so
-vendor/lib64/libadsprpc.so
 
 # AEE
 vendor/lib/libaedv.so
@@ -110,7 +96,6 @@ vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib/vendor.oplus.hardware.performance@1.0.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6893.so
@@ -154,7 +139,6 @@ vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib64/vendor.oplus.hardware.performance@1.0.so
 
 # Audio-configs
 odm/etc/audio/audio_device/common/audio_device.xml
@@ -357,10 +341,6 @@ vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
 vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml
-vendor/etc/audio_param/CRSVolUI_AudioParam.xml
-vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/CRSVol_AudioParam.xml
-vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml
 vendor/etc/audio_param/HpImpedance_AudioParam.xml
 vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml
 vendor/etc/audio_param/MicInfo_AudioParam.xml
@@ -496,9 +476,6 @@ vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-
-# CDSP
-vendor/lib64/libcdsprpc.so
 
 # connectivity
 odm/etc/init/init.oplus.reserve.rc
@@ -891,7 +868,6 @@ vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 # IMS
 bin/vtservice
 etc/init/init.vtservice.rc
--framework/mediatek-carrier-config-manager.jar
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
 -framework/mediatek-gwsd.jar
@@ -925,12 +901,10 @@ odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vtservice_hidl
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
 vendor/bin/volte_rcs_ua
-vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/volte_clientapi_ua.rc
 -vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
@@ -938,15 +912,12 @@ vendor/lib/libipsec_ims_shr.so
 vendor/lib/librcs_interface.so
 vendor/lib/librcs_volte_core.so
 vendor/lib/libvt_custom.so
-vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libmmagent.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Pin ImsService from ARES
@@ -1135,7 +1106,6 @@ vendor/etc/init/hw/meta_init.connectivity.rc
 vendor/etc/init/hw/meta_init.modem.rc
 vendor/etc/init/hw/meta_init.project.rc
 vendor/etc/init/hw/meta_init.rc
-vendor/etc/init/hw/meta_init.vendor.rc
 vendor/etc/init/hw/multi_init.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.cccimdinit.rc
@@ -1224,7 +1194,6 @@ odm/etc/init/init.SN100x.nfc.rc
 odm/etc/init/init.SN100x.se.rc
 odm/etc/nfc/libnfc-mtp-SN100.conf_20817:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_20817:vendor/etc/libnfc-nci.conf
-odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf
 odm/etc/nfc/nfc_conf_ref
 odm/etc/nfc/nfc_fw_ref
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57
@@ -1273,15 +1242,12 @@ vendor/lib64/libpowerhalwrap_vendor.so
 # PQ
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.10.so
 vendor/lib/vendor.mediatek.hardware.pq@2.11.so
 vendor/lib/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib/vendor.mediatek.hardware.pq@2.13.so
-vendor/lib/vendor.mediatek.hardware.pq@2.14.so
-vendor/lib/vendor.mediatek.hardware.pq@2.15.so
 vendor/lib/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib/vendor.mediatek.hardware.pq@2.4.so
@@ -1290,7 +1256,6 @@ vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
-vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
@@ -1299,8 +1264,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.11.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
-vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
@@ -1321,10 +1284,8 @@ vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 # Radio
 odm/lib/vendor.oplus.hardware.appradio@1.0.so
 odm/lib/vendor.oplus.hardware.mtkmodemaci@1.0.so
-odm/lib/vendor.oplus.hardware.radio-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.mtkmodemaci@1.0.so
-odm/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
 vendor/bin/hw/mtkfusionrild
 vendor/bin/AgentTest
 vendor/bin/ccci_mdinit
@@ -1339,7 +1300,6 @@ vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/muxreport
 vendor/bin/rttv
-vendor/etc/apdb/APDB_MT6885_S01__W2238
 vendor/etc/armnn_app.config
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
@@ -1397,7 +1357,6 @@ vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
-vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
@@ -1482,12 +1441,6 @@ vendor/etc/bluetooth_ums_offload_audio_policy_configuration.xml
 vendor/etc/default_volume_tables.xml
 etc/public.libraries-mtk.txt
 etc/public.libraries-trustonic.txt
-lib/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
-lib/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
-lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
-lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
-lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
-lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 odm/etc/media_codecs_ffmpeg.xml
 odm/etc/media_codecs_vendor_oplus.xml
 odm/lib/android.hardware.keymaster-V3-ndk_platform.so
@@ -1496,7 +1449,6 @@ odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib64/libneuron_runtime.so
 odm/lib64/libtrustonic_keybox_ca.so
 odm/lib64/vendor.oplus.hardware.engineer@1.0.so
-odm/lib64/vendor.oplus.hardware.subsys-V1-ndk_platform.so
 odm/init.oplus.face.rc
 odm/init.oplus.seccommon.rc
 system_ext/etc/public.libraries-oplus.txt
@@ -1513,7 +1465,6 @@ vendor/bin/fuelgauged
 vendor/bin/ipsec_mon
 vendor/bin/loghidlvendorservice
 vendor/data/model/scene_detection.dla
-vendor/etc/apdb/APDB_MT6885_S01__W2238_ENUM
 vendor/etc/init/atci_service.rc
 vendor/etc/init/init.oplus.cust.rc
 vendor/etc/init/tetheroffloadservice.rc
@@ -1590,11 +1541,9 @@ vendor/lib/libaaa_ltm.so
 vendor/lib/libaaa_ltmx.so
 vendor/lib/libainrcore.so
 vendor/lib/libaispq.so
-vendor/lib/libcustomer_testvision.so
 vendor/lib/libmidasserviceintf.so
 vendor/lib/librpc.so
 vendor/lib/ov50a_mipi_raw_21127_IdxMgr.so
-vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/mt6893/arm.graphics-ndk_platform.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/gc02m1_mipi_raw_21127_IdxMgr.so
@@ -1608,6 +1557,72 @@ vendor/lib64/imx709_mipi_raw_21305_IdxMgr.so
 vendor/lib64/imx766_mipi_raw_21305_IdxMgr.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
-vendor/lib64/libcustomer_testvision.so
 vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
 -vendor/priv-app/GpuGameDriver.mt6893/GpuGameDriver.mt6893.apk
+
+# Audio - from DN2103_11_F.45
+vendor/etc/apdb/APDB_MT6885_S01__W2238|824dfa50a95f90311e14f15df7d2375109543efb
+vendor/etc/apdb/APDB_MT6885_S01__W2238_ENUM|6fe92bf6c0caa7aa13e8a12b49cf379d8e29db10
+vendor/etc/audio_param/CRSVolUI_AudioParam.xml|cdac9bc70ae42c3910ecc26bcb81a275fbf64fab
+vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml|af941e39aec3b50e557ce022a3e8eba2b03b139c
+vendor/etc/audio_param/CRSVol_AudioParam.xml|2241f4b0d8516f981a9004215b4544eb1f689d8d
+vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml|6259c180b5d9951b43c0b55b3e6218ceea13c35d
+
+# ADSP - from DN2103_11_F.45
+odm/lib64/libadsprpc.so|623a330b0461a426370b6c5fd0b07255b7f8a0c5
+vendor/lib64/libadsprpc.so|623a330b0461a426370b6c5fd0b07255b7f8a0c5
+
+# CDSP - from DN2103_11_F.45
+vendor/lib64/libcdsprpc.so|d393cd58d77da265880b75ff4cece65b05ccc806
+
+# Modules ( configs ) - from DN2103_11_F.45
+vendor/etc/init/hw/meta_init.vendor.rc|a529c792254833fbf10d73eaf307353112aec389
+
+# Mmagent - from DN2103_11_F.45
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service|3990b0858daaf785c52203fe59c9631b2f98860e
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc|ce0a302d7e80c41250cc580d12fae8e4d541ccbd
+vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so|6aa1334127f723204d271c34446d83a3cd70b9a6
+vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so|7168d41eff788cf46d619a79debe893d24175712
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so|a360ccb2e0ced130353813070bb26966d05ffa2a
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so|767ac848aecfff1c5e1afa51d7d74f5e4e452ab9
+
+# Performance - from DN2103_11_F.45
+vendor/lib/vendor.oplus.hardware.performance@1.0.so|c393b10faf862add29210e6030666155aab6e60b
+vendor/lib64/vendor.oplus.hardware.performance@1.0.so|ca76e3b8e68c4ca811b49579c77ec67349972a06
+
+# PQ - from DN2103_11_F.45
+vendor/lib/vendor.mediatek.hardware.pq@2.14.so|3627090d726aae6a2775d0f49feb67d025508cd6
+vendor/lib/vendor.mediatek.hardware.pq@2.15.so|3b1ea603362aa3e5261db1cf5315b2ddb5586515
+vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so|c0b86a26181ff8fd53a6daed18864a551b363902
+vendor/lib64/vendor.mediatek.hardware.pq@2.14.so|8909939bb7d942ec269359d60151e7d973dc68eb
+vendor/lib64/vendor.mediatek.hardware.pq@2.15.so|3c7c77a0a7bbb06b6d838051984a3c71edb874a1
+vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so|ca463ddc15b4f2482b28392b0152cbe51360f04a
+
+# Radio - from DN2103_11_F.45
+lib/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so|7c45ae1bffd838e0dc3afb83d5b3531c00b1a759
+lib/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so|6c6843df9ee7f164658b709163e7b49b6e2204f0
+lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so|fd30bbd84e077084c0e25fc313640dc462884031
+lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so|33030f4b7e5c64833ca6c5098b5da48d66fe67a2
+lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so|60b323c561f75353a2419c8c48130e5c53cd8f92
+lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so|f8e2d0aa9af3ac93cc21b52bb5552f2b5c2354f3
+odm/lib/vendor.oplus.hardware.radio-V1-ndk_platform.so|e735ca46832012f3bc7ed3b05115a61d4a1f411b
+odm/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so|9ac5b6c9b98e2f43df4b29ccbe0036bb497a35ea
+vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so|5ce43069cb470d44079a0b21ee924c169278335b
+
+# IMS - from DN2103_11_F.45
+-framework/mediatek-carrier-config-manager.jar|b960969421db514a19796264f5cb75762c177009
+
+# TestVision - from DN2103_11_F.45
+vendor/lib/libcustomer_testvision.so|71cc8b553348dd737157e7c87bada495ed9140ed
+vendor/lib64/libcustomer_testvision.so|2947112b8655d17c0aabeaf0399bd44671dc998c
+
+# Extra - from DN2103_11_F.45
+odm/lib/libosensehalclient.so|ccbc028bfb3ca982e19968a8d92acc74979060c2
+odm/lib/vendor.oplus.hardware.osense.client@1.0.so|e8e33be1636e4ddcac377a485d002caf97726352
+odm/lib64/libosensehalclient.so|7cda5acb914d2f647351775c6d795ea561277cf8
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so|7ad621f110a91eaa07bab78e9a3c87e6bee95c78
+odm/lib64/vendor.oplus.hardware.subsys-V1-ndk_platform.so|b99274dbe8bcb67594f09d620bb54d81c9eeab01
+system_ext/lib/vendor.oplus.hardware.osense.client@1.0.so|84b8ea67c98bd8c5642b66dbdb7ab2657267371f
+system_ext/lib64/vendor.oplus.hardware.osense.client@1.0.so|76497a082391fbd4a19c6384545f1fc44883ffa6
+vendor/lib/libnxp_extamp_intf.so|77c024598b89fc4273c45e6a1eef35c06eb2f249
+vendor/lib64/libnxp_extamp_intf.so|58f3a7515164bfd66171b89fa370316802c52f6c

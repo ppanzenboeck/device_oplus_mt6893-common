@@ -104,15 +104,10 @@
             <Alias name="OMX.MTK.AUDIO.DECODER.ALAC" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
-        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-        <!-- xiaomiaobiao-xinzhi@MULTIMEDIA.MediaServer.CTS.4721281, 2022/11/5, Modify for CTS test -->
-        <!--
         <MediaCodec name="c2.mtk.wma.decoder" type="audio/x-ms-wma">
             <Alias name="OMX.MTK.AUDIO.DECODER.WMA" />
             <Limit name="channel-count" max="2" />
         </MediaCodec>
-        -->
-        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
         <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="5">
             <Alias name="OMX.MTK.AUDIO.DECODER.MP3" />
             <Limit name="channel-count" max="2" />
@@ -138,10 +133,6 @@
             <Limit name="size" min="64x64" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
             <Feature name="adaptive-playback"/>
-            <!-- #ifdef OPLUS_BUG_STABILITY-->
-            <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.4298357, 2022/09/01, add for wallpaper play-->
-            <Feature name="can-swap-width-height"/>
-            <!-- #endif OPLUS_BUG_STABILITY-->
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1280x719" value="180" />
@@ -153,17 +144,13 @@
             <Quirk name="wants-NAL-fragments" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="1" />
+            <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
-            <!-- #ifdef OPLUS_BUG_STABILITY-->
-            <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.4298357, 2022/09/01, add for wallpaper play-->
-            <Feature name="can-swap-width-height"/>
-            <!-- #endif OPLUS_BUG_STABILITY-->
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1280x719" value="180" />
@@ -174,7 +161,7 @@
             <Limit name="size" min="16x16" max="1920x1088" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="1" />
+            <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.heif.decoder" type="image/vnd.android.heic" >
@@ -205,7 +192,7 @@
             <Quirk name="wants-NAL-fragments" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="1" />
+            <Limit name="concurrent-instances" max="2" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.av1.decoder" type="video/av01" >
@@ -222,7 +209,7 @@
             <Quirk name="wants-NAL-fragments" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
-            <Limit name="concurrent-instances" max="1" />
+            <Limit name="concurrent-instances" max="2" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.mpeg2.decoder" type="video/mpeg2" >
